@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Botbusters</title>
+
+<script>
+function inicio(){
+	var myVar = setInterval(date, 1000);
+}
+
+function date(){
+	today = new Date();
+
+	BigDay = new Date("January 14, 2017 10:00:00");
+	//BigDay = new Date(2016, 11, 26, 16, 0, 0);
+	//bigDay = new Date(2016, 
+	msPerDay = 24 * 60 * 60 * 1000 ;
+	timeLeft = (BigDay.getTime() - today.getTime());
+	e_daysLeft = timeLeft / msPerDay;
+	daysLeft = Math.floor(e_daysLeft);
+	e_hrsLeft = (e_daysLeft - daysLeft)*24;
+	hrsLeft = Math.floor(e_hrsLeft);
+	e_minsLeft = (e_hrsLeft - hrsLeft)*60;
+	minsLeft= Math.floor(e_minsLeft);
+	e_secLeft = (e_minsLeft - minsLeft)*60;
+	secLeft = Math.floor(e_secLeft);
+	
+	document.getElementById("dys").innerHTML = daysLeft;
+	document.getElementById("hrs").innerHTML = hrsLeft;
+	document.getElementById("min").innerHTML = minsLeft;
+	document.getElementById("sec").innerHTML = secLeft;
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+
+</head>
+
+<body onLoad="inicio()">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="banner">
+	<div class="header">
+    	<div class="logo"><img src="img/botbusters.png" alt=""/></div>
+        <div class="idioma">
+        	<a href="#"><div class="eng"><img src="img/usa.jpg" alt=""/></div>English</a>
+            <a href="index.html"><div class="esp"><img src="img/mex.png" alt=""/></div>Español</a>
+        </div>
+        <div class="social">
+        	<a href="https://www.facebook.com/Team4635/" target="_blank"><img src="img/fb.jpg" alt=""/></a>
+            <a href="https://twitter.com/team4635" target="_blank"><img src="img/tt.jpg" alt=""/></a>
+            <a href="https://www.youtube.com/user/Team4635" target="_blank"><img src="img/yt.jpg" alt=""/></a>
+        </div>
+  	</div>
+  	<img src="img/spacer.png" width="100%" height="1" style="height:1px;" alt=""/>
+	<div class="ban">
+    	<div class="wrapper">
+            <img src="img/logo.png" width="400" height="400" alt=""/>
+            <div class="texto">
+                <h2>WE AIN'T AFRAID</h2>
+                <h1>OF NO <span>BOTS</span></h1>
+                <p>Nueva imagen, nuevo estilo nueva era. Team Eugenio se reestructura totalmente para convertirse en BotBusters</p>
+            </div>
+        </div>
+    </div>
+  	<div class="menu">
+    	<a href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="roster.html">ROSTER</a>
+        <a href="proyectos.html">PROYECTOS</a>
+        <a href="first.html">FIRST</a>
+        <a href="competencias.html">COMPETENCIAS</a>
+        <a href="patrocinadores.html">PATROCINADORES</a>
+        <a href="contacto.html">CONTACTO</a>
+        
+        <div class="date">
+        	<img src="img/first.png" width="1000" height="400" alt=""/>
+          <p>TIEMPO RESTANTE PARA KICK OFF: </p>
+		<div class="number"><span id="dys">0</span><div class="line"></div>DÍAS</div>
+            <div class="number"><span id="hrs">0</span><div class="line"></div>HORAS</div>
+            <div class="number"><span id="min">0</span><div class="line"></div>MINUTOS</div>
+            <div class="number"><span id="sec">0</span><div class="line"></div>SEGUNDOS</div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper" style="height:500px;">
+	<div class="one">
+        <div class="calendar">
+        	<div class="day">
+            	<p>AGO</p>
+            	<h1>04</h1>
+            </div>
+            <div class="evento">
+            	<h1>EVENTO DÍA UNO</h1>
+                <p>Jardín Central</p>
+            </div>
+        </div>
+        <div class="calendar">
+        	<div class="day">
+            	<p>AGO</p>
+            	<h1>08</h1>
+            </div>
+            <div class="evento">
+            	<h1>INICIO DE CLASES</h1>
+                <p>CEGS</p>
+            </div>
+        </div>
+        <div class="calendar">
+        	<div class="day">
+            	<p>AGO</p>
+            	<h1>13</h1>
+            </div>
+            <div class="evento">
+            	<h1>INICIO MINI-BOTBUSTERS</h1>
+                <p>Taller Robótica</p>
+            </div>
+        </div>
+        <div class="calendar">
+        	<div class="day">
+            	<p>SEP</p>
+            	<h1>02</h1>
+            </div>
+            <div class="evento">
+            	<h1>PRESENTACIÓN DE PROYECTOS</h1>
+                <p>Sala Cultural</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="third">
+      <h2>PROYECTO DE LA SEMANA</h2>
+   	  <h1>MANO BIÓNICA</h1>
+      
+      <div class="line"></div>
+        <img src="projects/robots-used-today_48dd80f5ebc9fbf2.jpg" alt=""/>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+    <div class="twothirds">
+    	<a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/Botbusters4635/timelines/763902169116401664">Botbusters</a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<img src="img/spacer.png" width="100%" height="1" alt=""/>
+    </div>
+<img src="img/spacer.png" width="100%" height="1" alt=""/>
+</div>
+<img src="img/spacer.png" width="100%" height="1" alt=""/>
+<div class="footer">
+	<div class="sponsors">
+    	<div class="wrapper">
+    		<img class="vertical" src="sponsors/trex.png" alt=""/> 
+            <img class="vertical" src="sponsors/3d.png" alt=""/> 
+        </div>
+    </div>
+    <p style="text-align:center; color:#555;">botbusters.rocks</p>
+</div>
+
+</body>
+</html>

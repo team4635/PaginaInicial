@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Botbusters</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+
+</head>
+
+<body>
+<script>
+		function submitContacto()
+		{
+			var serializedData = $('#contactoForm').serialize();
+			 $.ajax({
+				  type: "POST",
+				  url: "sendContacto.php",
+				  data: serializedData
+				  }).done(function() {
+					  alert( "¡Gracias por contactarnos!" );
+					  jQuery('#contactoForm')[0].reset();	
+			  });	
+		}
+		
+    </script>
+    
+<div class="banner_s">
+	<div class="header">
+    	<div class="logo"><img src="img/botbusters.png" alt=""/></div>
+        <div class="idioma">
+        	<a href="#"><div class="eng"><img src="img/usa.jpg" alt=""/></div>English</a>
+            <a href="index.html"><div class="esp"><img src="img/mex.png" alt=""/></div>Español</a>
+        </div>
+        <div class="social">
+        	<a href="https://www.facebook.com/Team4635/" target="_blank"><img src="img/fb.jpg" alt=""/></a>
+            <a href="https://twitter.com/team4635" target="_blank"><img src="img/tt.jpg" alt=""/></a>
+            <a href="https://www.youtube.com/user/Team4635" target="_blank"><img src="img/yt.jpg" alt=""/></a>
+        </div>
+  	</div>
+  	<img src="img/spacer.png" width="100%" height="1" style="height:1px;" alt=""/>
+	
+  	<div class="menu">
+    	<a href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="roster.html">ROSTER</a>
+        <a href="proyectos.html">PROYECTOS</a>
+        <a href="first.html">FIRST</a>
+        <a href="competencias.html">COMPETENCIAS</a>
+        <a href="patrocinadores.html">PATROCINADORES</a>
+        <a href="contacto.html">CONTACTO</a>
+    </div>
+</div>
+
+<iframe style="border-bottom:1px solid #999;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.0429934738568!2d-100.35829398516745!3d25.669869483678525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bdf901f416f9%3A0x6045fb17cab11573!2sPrepa+Tec+Eugenio+Garza+Sada!5e0!3m2!1ses!2smx!4v1469495494424" width="100%" height="300" frameborder="0" allowfullscreen ></iframe>
+
+<div class="wrapper">
+    <div class="third">
+    	<img src="img/foto01.jpg" alt=""/>
+        <img src="img/foto02.jpg" alt=""/>
+    </div>
+  	<div class="twothirds">
+   		<h1 style="text-align:center;">PONTE EN <span>CONTACTO!</span></h1>
+        <div class="line"></div>
+    	<p>Si tienes comentarios, sugerencias o nos queires contar tu experiencia, no dudes en contactarnos.</p>
+         <form id="contactoForm" method="post">
+          <label for="name">Nombre</label>
+          <input name="name" type="text" id="name" value=""/> 
+          <label for="email" >Teléfono</label>
+          <input name="email"  type="text" id="email" value="" /> 
+          <label for="website" >E-mail</label>
+          <input name="website" type="text" id="website" value=""/> 
+          <label for="message">Comentarios</label>
+          <textarea name="message"  id="message" cols="20" rows="7" ></textarea>
+          <input type="hidden" id="myemail" name="myemail" value="paco.war@itesm.mx" />
+          <input name="send" type="button" value="Enviar" class="button medium align" id="send" onClick="submitContacto()"/>
+           <img src="images/spacer.png" width="300" height="1" />
+		</form>
+    </div>
+    <img src="img/spacer.png" width="100%" height="1" alt=""/>
+</div>
+<div class="footer">
+	<div class="sponsors">
+    	<div class="wrapper">
+    		<img class="vertical" src="sponsors/trex.png" alt=""/> 
+            <img class="vertical" src="sponsors/3d.png" alt=""/> 
+        </div>
+    </div>
+    <p style="text-align:center; color:#555;">botbusters.rocks</p>
+</div>
+
+</body>
+</html>

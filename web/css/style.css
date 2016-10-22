@@ -1,0 +1,575 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {font-family: "Alternate Gothic No.2 BT";src: url(../fonts/AlternateGothic.ttf) format("truetype");}
+@font-face {font-family: "Abadi MT Condensed Light";src: url(../fonts/Abadi-MT-Condensed-Light-Regular.ttf) format("truetype");}
+@font-face {font-family: "Paranoid Orange Regular";src: url(../fonts/ParanoidOrange.ttf) format("truetype");}
+
+body{
+	margin:0;
+	background:url(../img/whitewall.jpg) fixed;
+	background-size: 100% auto;
+}
+
+p{
+	font-family: "Abadi MT Condensed Light";
+	margin:0;
+}
+
+h1{
+	display:inline-block; 
+	margin:1px;
+	padding-left:10px;
+	padding-right:10px;
+	/*font-family: "Paranoid Orange Regular";*/
+	font-family: "Alternate Gothic No.2 BT";
+	font-weight:100;
+	font-size:30px;
+	line-height:30px;
+	color:#fff;
+	background:#111;
+}
+
+h2{
+	display:inline-block; 
+	margin:1px;
+	padding-left:10px;
+	padding-right:10px;
+	/*font-family: "Paranoid Orange Regular";*/
+	font-family: "Alternate Gothic No.2 BT";
+	font-weight:100;
+	font-size:20px;
+	line-height:20px;
+	color:#fff;
+	background:#EB2E31;
+}
+
+
+span{
+	color:#EB2E31;
+}
+
+.logo{
+	width:380px;
+	float:left;
+	margin-left:20px;
+	position:relative;
+}
+
+.logo img{
+	position:absolute;
+	width:100%;
+	height:auto;
+}
+
+.placa{
+	
+}
+
+.wrapper{
+	width:900px;
+	margin:0 auto;
+}
+
+.line{
+	width:100%;
+	height:1px;
+	border-top:1px dotted #999;
+	margin:0 auto;
+	z-index:10;
+	margin-bottom:10px;
+}
+
+.banner{
+	width:100%;
+	height:500px;
+	background:url(../img/bg.jpg);
+	background-size:100% auto;
+	border-bottom:5px solid #EB2E31;
+}
+
+.banner_s{
+	width:100%;
+	height:100px;
+	background:url(../img/bg.jpg);
+	background-size:100% auto;
+	border-bottom:5px solid #EB2E31;
+}
+
+.header{
+	width:100%;
+	height:30px;
+	background:url(../img/header.png);
+	border-bottom:1px dotted #333;
+}
+
+.ban{
+	width:100%;
+	height:399px;
+	position:relative;
+	margin:0;
+}
+
+.ban img{
+	width:400px;
+	height:400px;
+	float:left;
+	margin:0;
+}
+
+.ban .texto{
+	width:400px;
+	height:300px;
+	float:left;
+	overflow:hidden;
+	margin:0;
+	margin-top:100px;
+}
+
+.texto p{
+	color:#999;
+	font-size:20px;
+	display:inline-block;
+}
+
+.ban h1{
+	display:inline-block; 
+	margin:3px;
+	font-family: "Paranoid Orange Regular";
+	font-weight:100;
+	font-size:120px;
+	line-height:80px;
+	letter-spacing:-3px;
+	color:#fff;
+	background:none;
+	padding:3px;
+}
+
+.ban h2{
+	display:inline-block; 
+	margin:3px;
+	font-family: "Paranoid Orange Regular";
+	font-weight:100;
+	font-size:80px;
+	line-height:80px;
+	letter-spacing:-3px;
+	color:#fff;
+	background:none;
+	padding:3px;
+}
+
+.menu{
+	width:100%;
+	height:54px;
+	border-top:1px dotted #333;
+	/*background:url(../img/menu.png);*/
+	position:relative;
+}
+
+.menu a{
+	transition:all 3s;
+	font-family: "Abadi MT Condensed Light";
+	font-size:12px;
+	text-decoration:none;
+	color:#999;
+	border-right:1px solid #333;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:20px;
+	padding-bottom:20px;
+	float:left;
+}
+
+.menu a:hover{
+	transition:all 0.5s;
+	background:#EB2E31;
+	color:#fff;
+	
+}
+
+
+.date{
+	width:340px;
+	height:auto;
+	margin:0 auto;
+	padding:5px;
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	
+}
+
+.date p{
+	color:#fff;
+	text-align:center;
+}
+
+.date img{
+	width:150px;
+	height:auto;
+	display:block;
+	margin:0 auto;
+}
+
+.number{
+	width:80px;
+	height:55px;
+	border-radius:5px;
+	background:#000;
+	float:left;
+	margin:2px;
+	color:#aaa;
+	font-family: "Abadi MT Condensed Light";
+	font-size:11px;
+	text-align:center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.number span{
+	width:100%;
+	margin:0 auto;
+	margin-bottom:-5px;
+	font-family: "Alternate Gothic No.2 BT";
+	font-size:40px;
+	color:#eee;
+	opacity:0.99;
+	z-index:0;
+	
+}
+
+.number .line{
+	width:100%;
+	height:1px;
+	border-top:1px solid #444;
+	background:#222;
+	margin-top:-23px;
+	margin-bottom:17px;
+	opacity:0.40;
+	z-index:10;
+}
+
+.footer{
+	width:100%;
+	height:110px;
+	border-top:2px solid #EB2E31;
+	background:#111;
+}
+
+.sponsors{
+	width:100%;
+	height:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0 auto;
+	border-top:1px dotted #444;
+	border-bottom:1px dotted #333;
+}
+
+.sponsors .vertical{
+	height:50px;
+	width:auto;
+	float:left;
+	opacity:0.5;
+	margin-right:20px;
+}
+
+.sponsors .horizontal{
+	height:34px;
+	width:auto;
+	float:left;
+	margin-top:8px;
+	margin-bottom:8px;
+	margin-right:20px;
+	opacity:0.5;
+}
+
+.social{
+	width:40px;
+	float:right;
+	top:50px;
+	right:0px;
+	position:absolute;
+}
+
+.social a{
+	transition:opacity 2s;
+	width:40px;
+	height:40px;
+	margin-right:5px;
+	cursor:pointer;
+	opacity:1.0;
+}
+
+.social a:hover{
+	transition: opacity 0.5s;
+	opacity:0.5;
+}
+
+.social img{
+	width:40px;
+	height:40px;
+}
+
+.one{
+	width:848px;
+	padding:20px;
+	margin:5px;
+	float:left;
+	border:1px solid #aaa;
+	border-radius:3px;
+	background:#fff;
+	opacity:0.9;
+}
+
+.third{
+	width:248px;
+	padding:20px;
+	margin:5px;
+	float:left;
+	border:1px solid #aaa;
+	border-radius:3px;
+	background:#fff;
+	opacity:0.9;
+}
+
+.third img{
+	width:100%;
+	height:auto; 
+}
+
+.twothirds{
+	width:548px;
+	padding:20px;
+	float:left;
+	margin:5px;
+	border:1px solid #aaa;
+	border-radius:3px;
+	background:#fff;
+	opacity:0.9;
+}
+
+.half{
+	width:46%;
+	padding:2%;
+	float:left;
+}
+
+
+.idioma{
+	width:200px;
+	float:right;
+	color:#555;
+	margin-top:5px;
+	margin-right:20px;
+}
+
+.idioma a{
+	width:70px;
+	font-family: "Abadi MT Condensed Light";
+	font-size:14px;
+	color:#999;
+	text-decoration:none;
+	margin-left:10px;
+	margin-right:10px;
+	float:left;
+	cursor:pointer;
+}
+
+.idioma a .eng img, .idioma a .esp img{
+	width:25px;
+	height:auto;
+	float:left;
+	margin-right:5px;
+}
+
+
+.date{
+	width:340px;
+	height:auto;
+	margin:0 auto;
+	padding:5px;
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	
+}
+
+.date p{
+	color:#fff;
+	text-align:center;
+}
+
+.date img{
+	width:150px;
+	height:auto;
+	display:block;
+	margin:0 auto;
+}
+
+.budget .number{
+	width:40px;
+	height:45px;
+	border-radius:5px;
+	background:#000;
+	float:left;
+	margin:1px;
+	color:#aaa;
+	font-family: "Abadi MT Condensed Light";
+	font-size:11px;
+	text-align:center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table{
+	width:100%;
+	font-family: "Abadi MT Condensed Light";
+}
+
+table td{
+	height:20px;
+	border-bottom:1px dotted #999;
+}
+
+table th{
+	background:#111;
+	color:#fff;
+}
+
+form{
+	width:50%;
+	margin:0 auto;
+	font-family: "Abadi MT Condensed Light";
+}
+
+form label{
+	width:100%;
+	display:block;
+	margin-top:10px;
+}
+
+form input, form textarea{
+	width:100%;
+	padding:3px;
+}
+
+
+.calendar{
+	width:201px;
+	height:70px;
+	border:1px solid #aaa;
+	float:left;
+	margin-left:5px;
+}
+
+.day{
+	width:48px;
+	height:59px;
+	margin:2px;
+	background:#111;
+	border:1px solid #222;
+	border-bottom:5px solid #EB2E31;
+	float:left;
+}
+
+.day p{
+	color:#fff;
+	text-align:center;
+}
+
+.day h1{
+	font-family: "Paranoid Orange Regular";
+	font-size:40px;
+	background:none;
+	text-align:center;
+	margin:0px;
+	color:#EB2E31;
+}
+
+.evento{
+	width:108px;
+	height:64px;
+	float:left;
+	margin:2px;
+	margin-left:6px;
+}
+
+
+.evento h1{
+	font-family: "Alternate Gothic No.2 BT";
+	font-size:18px;
+	background:none;
+	color:#222;
+	margin:0px;
+	margin-left:-8px;
+	line-height:18px;
+}
+
+
+.roster{
+	width:104px;
+	height:160px;
+	border:1px solid #ddd;
+	padding:2px;
+	margin:4px;
+	float:left;
+}
+
+.roster .photo{
+	width:98px;
+	height:110px;
+	margin:2px;
+	border:1px solid #ddd;
+	background:#444;
+}
+
+.roster .photo img{
+	width:100%;
+	height:100%;
+}
+
+.roster h2{
+	font-size:15px;
+	padding:1px;
+	display:block;
+	text-align:center;
+}
+
+.roster h1{
+	font-size:13px;
+	padding:2px;
+	display:block;
+	text-align:center;
+	line-height:15px;
+}
+
+.roster h2 span{
+	color:#111;
+}
+
+.coaches{
+	margin-left:20px;
+}
+
+.coaches h2{
+	background:none;
+	color:#111;
+	padding:0px;
+	font-size:14px;
+	margin-bottom:0px;
+}
+
+.coaches p{
+	margin-top:0px;
+}
+
+.registro{
+	margin:0 auto;
+	background:#333;
+}
+
+
+
+
+
+
+
