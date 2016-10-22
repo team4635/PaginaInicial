@@ -321,6 +321,7 @@ span{
 	opacity:0.9;
 }
 
+
 .third{
 	width:248px;
 	padding:20px;
@@ -433,6 +434,15 @@ table td{
 table th{
 	background:#111;
 	color:#fff;
+}
+
+table input{
+	width:90%;
+	margin-left:5%;
+}
+
+.center{
+	text-align:center;
 }
 
 form{
@@ -567,7 +577,53 @@ form input, form textarea{
 	background:#333;
 }
 
+.button{
+	width:100px;
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;
+	border:1px solid #444;
+	background:#222;
+	border-radius:5px;
+	color:#fff;
+	font-family:"Abadi MT Condensed Light";
+	text-align:center;
+	cursor:pointer;
+	float:right;
+}
 
+.button:hover{
+	background:#111;
+}
+
+.oa{
+	width:10px;
+	height:10px;
+	border-radius:10px;
+	display:block;
+	margin: auto;
+}
+
+.green { 
+	background:#25B668;
+	border:1px solid #4E9B54;
+}
+
+.yellow { 
+	background:#FFC600;
+	border:1px solid #EDB01C;
+}
+
+.red { 
+	background:#BD2C2E;
+	border:1px solid #A42224;
+}
+
+.profile{
+	width:100px;
+	height:100px;
+	float:left;
+}
 
 
 
