@@ -11,6 +11,8 @@ build:
         code: php -S localhost:8000 >> /dev/null &
 deploy:
   steps:
+    - install-packages:
+      packages: openssh-client
     - add-to-known_hosts:
         hostname: $SERVER_HOSTNAME
     - add-ssh-key:
