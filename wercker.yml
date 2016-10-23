@@ -12,7 +12,7 @@ build:
 deploy:
   steps:
     - install-packages:
-      packages: openssh-client
+      packages: git openssh-client
     - add-to-known_hosts:
         hostname: $SERVER_HOSTNAME
     - add-ssh-key:
